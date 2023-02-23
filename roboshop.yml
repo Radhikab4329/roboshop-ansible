@@ -2,3 +2,4 @@
   hosts: "{{HOSTS}}"
   roles:
     - "{{ROLE_NAME}}"
+
