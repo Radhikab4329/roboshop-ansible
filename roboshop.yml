@@ -1,5 +1,6 @@
-- name: Install Nginx
-  hosts: "{{HOSTS}}"
+- name: Roboshop setup
+  hosts: all
+  become: yes
   roles:
     - "{{ROLE_NAME}}"
 
