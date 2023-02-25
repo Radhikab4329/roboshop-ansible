@@ -8,7 +8,7 @@
 
 - name: Add Application User
   ansible.builtin.user:
-    username: roboshop
+    name: roboshop
 
 - name: Remove old app content
   ansible.builtin.file:
