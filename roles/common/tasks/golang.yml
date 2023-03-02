@@ -8,7 +8,8 @@
 
 - name: Download Golang Dependencies
   ansible.builtin.shell:
-    requirements: /app
+    args:
+      chdir: /app
 
 - name: SystemD Setup
   ansible.builtin.include_tasks: "systemd.yml"
