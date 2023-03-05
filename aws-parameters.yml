@@ -29,6 +29,8 @@
         - {name: "dev.user.MONGO", value: "true" }
         - {name: "dev.user.MONGO_URL", value: "mongodb://mongodb-dev.learndevops43.online:27017/users" }
         - {name: "dev.user.REDIS_HOST", value: "redis-dev.learndevops43.online" }
+        - {name: "dev.dispatch.AMQP_HOST", value: "rabbitmq-dev.learndevops43.online" }
+        - {name: "dev.dispatch.AMQP_USER", value: "roboshop" }
 
           ### PASSWORDS SHOULD NEVER BE KEPT IN THESE REPOS, THOSE SHOULD BE CREATED MANUALLY, BUT FOR LAB PURPOSE IAM CREATING HERE
     - name: Create Secrets
@@ -39,3 +41,4 @@
         string_type: "SecureString"
       loop:
         - {name: "dev.payment.AMQP_PASS", value: "roboshop123" }
+        - {name: "dev.dispatch.AMQP_PASS", value: "roboshop123" }
