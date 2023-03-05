@@ -7,7 +7,7 @@
   ansible.builtin.include_tasks: "app-prereq.yml"
 
 - name: Download Golang Dependencies
-  ansible builtin package:
+  ansible.builtin.package:
     name: golang
     state: latest
 
