@@ -7,9 +7,9 @@
   ansible.builtin.include_tasks: "app-prereq.yml"
 
 - name: Download Golang Dependencies
-  ansible.builtin.shell:
-    args:
-      chdir: /app
+  ansible builtin package:
+    name: golang
+    state: latest
 
 - name: SystemD Setup
   ansible.builtin.include_tasks: "systemd.yml"
