@@ -9,6 +9,7 @@
 - name: Download Golang Dependencies
   ansible.builtin.package:
     name: golang
+    path: /app
     state: latest
 
 - name: SystemD Setup
