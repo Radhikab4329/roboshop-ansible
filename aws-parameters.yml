@@ -20,8 +20,8 @@
         - {name: "dev.frontend.SHIPPING_URL", value: "http://shipping-dev.learndevops43.online:8080/" }
         - {name: "dev.payment.CART_HOST", value: "cart-dev.learndevops43.online" }
         - {name: "dev.payment.USER_HOST", value: "user-dev.learndevops43.online" }
-        - {name: "dev.payment.CART_PORT", value: "80" }
-        - {name: "dev.payment.USER_PORT", value: "80" }
+        - {name: "dev.payment.CART_PORT", value: "8080" }
+        - {name: "dev.payment.USER_PORT", value: "8080" }
         - {name: "dev.payment.AMQP_HOST", value: "rabbitmq-dev.learndevops43.online" }
         - {name: "dev.payment.AMQP_USER", value: "roboshop" }
         - {name: "dev.shipping.CART_ENDPOINT", value: "cart-dev.learndevops43.online:8080" }
